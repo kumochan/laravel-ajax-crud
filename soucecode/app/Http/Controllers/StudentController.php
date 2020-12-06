@@ -4,9 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Student;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Response;
 class StudentController extends Controller
 {
+
+    public function search(Request $request)
+    {
+        $students = DB::table('students')->where('first_name','like','%' .$request->txtSearch.'%')->get();
+        return Response::json($students);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -15,8 +23,8 @@ class StudentController extends Controller
     public function index()
     {
 		//
-        $data['students'] = Student::orderBy('id','desc')->paginate(5);   
-        return view('student.list',$data);
+        $data['students'] = Student::orderBy('id','desc')->paginate(5);
+        return view('student.index', $data);
     }
 
     /**
@@ -43,6 +51,9 @@ class StudentController extends Controller
             'last_name'=> $request->post('txtLastName'),
             'address'=> $request->post('txtAddress')
         ]);
+
+		//dd($request->all());
+
 		$student->save();    
         return Response::json($student);
     }
@@ -84,10 +95,10 @@ class StudentController extends Controller
     public function update(Request $request)
     {
         //
-		$student = Student::find($request->post('hdnStudentId'));
-        $student->first_name = $request->post('txtFirstName');
-        $student->last_name = $request->post('txtLastName');
-        $student->address = $request->post('txtAddress');
+		$student = Student::find($request->id);
+        $student->first_name = $request->first_name;
+        $student->last_name = $request->last_name;
+        $student->address = $request->address;
         $student->update();
 		return Response::json($student);
     }
