@@ -46,6 +46,7 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         //
+//        dd($request->txtFirstName);
 		$student = new Student([
             'first_name' => $request->post('txtFirstName'),
             'last_name'=> $request->post('txtLastName'),

@@ -33,7 +33,7 @@
 				<td>{{ $student->id }}</td>
 				<td class="first_name">{{ $student->first_name }}</td>
 				<td class="last_name">{{ $student->last_name }}</td>
-				<td>{{ $student->address }}</td>
+				<td class="">{{ $student->address }}</td>
 				<td>
 					<a data-id="{{ $student->id }}" class="btn btn-primary btnEdit">Edit</a>
 					<a data-id="{{ $student->id }}" class="btn btn-danger btnDelete">Delete</a>
@@ -199,9 +199,9 @@
 
       // edit ajax
 	  var editStudent =  function (){
-          console.log($('#updateStudent').serialize());
-          var form_data = $(this).serialize();
-          var id = $('#updateStudent #hdnStudentId').val();
+          //console.log($('#updateStudent').serialize());
+          //var form_data = $(this).serialize();
+          //var id = $('#updateStudent #hdnStudentId').val();
           $.post('student/update',{
               'first_name': $('#updateStudent #txtFirstName').val(),
               'last_name': $('#updateStudent #txtLastName').val(),
@@ -213,10 +213,11 @@
               console.log(id);
               $('#'+id+' td.first_name').html(data.first_name);
               $('#'+id+' td.last_name').html(data.last_name);
+              $('#'+id+' td.address').html(data.address);
               var student_id = $(this).attr('data-id');
               // clear form
               // $('#updateStudent')[0].reset();
-              $('#addModal').modal('hide');
+              $('#updateModal').modal('hide');
           });
 	  };
 
