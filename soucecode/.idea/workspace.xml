@@ -26,8 +26,6 @@
                 <element signature="e#64#70#0" expanded="true" />
                 <element signature="e#58#64#0" expanded="true" />
                 <element signature="e#64#70#0" expanded="true" />
-                <element signature="e#58#64#0" expanded="true" />
-                <element signature="e#64#70#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -211,8 +209,8 @@
       <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="25" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="565" />
     <option name="width" value="1440" />
     <option name="height" value="822" />
   </component>
@@ -319,16 +317,15 @@
       <option name="presentableId" value="Default" />
       <updated>1607237461157</updated>
       <workItem from="1607237462573" duration="10221000" />
-      <workItem from="1608885258234" duration="3085000" />
+      <workItem from="1608885258234" duration="3194000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13306000" />
+    <option name="totallyTimeSpent" value="13415000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1002" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="565" width="1440" height="822" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -337,7 +334,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25239617" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3390558" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -366,8 +363,6 @@
           <folding>
             <element signature="e#1367#2677#0#HTML" />
             <element signature="e#4201#5264#0#HTML" />
-            <element signature="e#58#64#0" expanded="true" />
-            <element signature="e#64#70#0" expanded="true" />
             <element signature="e#58#64#0" expanded="true" />
             <element signature="e#64#70#0" expanded="true" />
             <element signature="e#58#64#0" expanded="true" />
@@ -456,8 +451,6 @@
           <folding>
             <element signature="e#1367#2677#0#HTML" />
             <element signature="e#4201#5264#0#HTML" />
-            <element signature="e#58#64#0" expanded="true" />
-            <element signature="e#64#70#0" expanded="true" />
             <element signature="e#58#64#0" expanded="true" />
             <element signature="e#64#70#0" expanded="true" />
             <element signature="e#58#64#0" expanded="true" />
